@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cursovay-oop"
+version = "0.1.0"
+description = ""
+authors = ["ttt.temaa <artem1005200776@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest-cov = "^5.0.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+pep8 = "^1.7.1"
+mypy = "^1.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

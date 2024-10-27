@@ -2,7 +2,7 @@ from src.vacancy import Vacancy
 
 
 def get_top_vacancies(vacancies: list[Vacancy], n: int) -> list:
-    """Функция, которая возвращает определённый топ вакансий"""
+    """Функция возвращения топа вакансий"""
 
     vacancies.sort(reverse=True)
     new_list = []
@@ -12,7 +12,7 @@ def get_top_vacancies(vacancies: list[Vacancy], n: int) -> list:
 
 
 def filter_vacancies(vacancies: list[Vacancy], filter_word: str) -> list:
-    """Функция, которая фильтрует вакансии по слову в требованиях"""
+    """Функция фильтрации вакансии по слову в требованиях"""
 
     new_list = []
     for i in vacancies:
@@ -24,5 +24,6 @@ def filter_vacancies(vacancies: list[Vacancy], filter_word: str) -> list:
 
 def print_vacancies(vacancies: list[Vacancy]) -> None:
     """Функция, которая выводит вакансии"""
+
     for i in vacancies:
         print(i)
